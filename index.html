@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //no 1
+        let bil1 = 100
+        let bil2 = 200
+        let bil3 = 300
+        if (bil1>bil2 && bil1>bil3) {
+            console.log(bil1)
+        } else if(bil2>bil1 && bil2>bil3) {
+            console.log(bil2)
+        } else if(bil3>bil1 && bil3>bil2) {
+            console.log(bil3)
+        }  else if (bil1==bil2 && bil1==bil3) {
+            console.log ("semua bilangan sama")
+        }
+
+        //nomor 2
+        let bilangan = 2 
+        let sisa = bilangan %2
+        if (sisa == 0) {
+            console.log("Bilangan Genap ")
+        }
+        else (
+            console.log("Bilagan Ganjil")
+        )
+
+        if (bilangan < 0) {
+            console.log("Bilangan Negatif")
+        }
+        if (bilangan > 0) {
+            console.log("Bilangan Positif")
+         }
+
+
+        //nomor 3
+        let saklar = 1;
+        if(saklar == 1) {
+            console.log("ON")
+        } else if(saklar == 0) {
+            console.log("OFF")
+        } else {
+            console.log("Masukan angka 1 atau 0")
+        }
+
+
+
+        //diskon dan barang no 4
+        
+        let harga1, harga2, harga3, total, diskon, bayar;
+
+        harga1 = Number(prompt("Masukkan harga barang pertama:"));
+        harga2 = Number(prompt("Masukkan harga barang kedua:"));
+        harga3 = Number(prompt("Masukkan harga barang ketiga:"));
+
+        total = harga1 + harga2 + harga3;
+
+        if (total > 10000) {
+       
+        diskon = total * 0.1;
+        bayar = total - diskon;
+
+        console.log("Total harga: " + total);
+        console.log("Diskon 10%: " + diskon);
+        console.log("Harga setelah diskon: " + bayar);
+        } else {
+         diskon = 0;
+        bayar = total;
+        console.log("Total harga: " + total);
+        console.log("Tidak ada diskon");
+        console.log("Harga setelah diskon: " + bayar);
+         }
+
+        //no 5
+        let bil = 4;
+        if (bil < 6) {
+            console.log("gaji lembur Rp. 100.000")
+        } else if (bil == 6) {
+            console.log("gaji lebur Rp. 200.000")
+        } else if (bil > 6) {
+            console.log("gaji lembur Rp. 300.000")
+        }
+
+        //no 6
+        let air = 700;
+        if(air<=500) {
+            console.log("AMAN")
+        } else if(air<=600) {
+            console.log("WASPADA")
+        } else if(air<=650) {
+            console.log("SIAGA 1")
+        } else if(air>650) {
+            console.log("SIAGA 2")
+        }
+
+        //Penerimaan siswa baru
+        let jalur = "prestasi"
+        let nilai = 85;
+        let tes = 60;
+        if(nilai > 89 && nilai < 100) {
+            console.log("nilai sempurna dan lolos")
+        } else if(nilai > 79 && nilai < 90) {
+            console.log("ikut tes mandiri")
+        } else if(tes > 78 && tes < 101) {
+            console.log("lolos tes")
+        } else if (tes < 79) {
+            console.log("tidak lolos")
+        } else if (nilai < 79) {
+            console.log("tidak lolos")
+        }
+
+        let nli = 30;
+        let tesmandiri = 80;
+        let jlr = "rapot";
+
+        if (nli >= 90 && nilai <= 100) {
+            console.log("Nilai bagus")
+        } else if (nli >= 75 && nli < 90){
+            if (jalur == "rapot") {
+                console.log("anda lulus nilai lewat rapot")
+            }else if (jalur == "prestasi") {
+                console.log ("anda lulus nilai lewat jalur prestasi")
+            }
+        } else {
+            if(tesmandiri >= 80) {
+                console.log ("lolos tes masuk")
+            } else {
+                console.log("tidak lolos masuk")
+            }
+        }
+ 
+    </script>
+</body>
+</html>
